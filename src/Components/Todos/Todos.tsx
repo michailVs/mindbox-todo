@@ -29,6 +29,7 @@ const Todos = () => {
 
     const addTodo = () => {
         if (value.length < 2) return
+        if (todos.find(el => el.task === value)) return
         setTodos(prev => prev = [...prev, {done: false, task: value}])
         setValue('')
     }
