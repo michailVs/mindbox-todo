@@ -1,0 +1,10 @@
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    // Jest работает в CommonJS
+    "module": "CommonJS",
+    // Отключаем строгий verbatimModuleSyntax, чтобы import/exports конвертировались
+    "verbatimModuleSyntax": false
+  },
+  "include": ["src", "jest.setup.ts", "src/**/*.test.ts", "src/**/*.test.tsx"]
+}
